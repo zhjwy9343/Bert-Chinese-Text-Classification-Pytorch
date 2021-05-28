@@ -26,8 +26,8 @@ class Config(object):
         self.learning_rate = 5e-5                                       # 学习率
         self.bert_path = './bert_pretrain'
         self.tokenizer = BertTokenizer.from_pretrained(self.bert_path)
-        self.hidden_size = 768
-
+        # self.hidden_size = 768
+        self.hidden_size = 1024
 
 class Model(nn.Module):
 
